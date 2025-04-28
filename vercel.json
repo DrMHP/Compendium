@@ -1,17 +1,11 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "vite.config.ts",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build",
-        "installCommand": "npm install --legacy-peer-deps"
+        "distDir": "dist"
       }
     }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
   ]
 }
