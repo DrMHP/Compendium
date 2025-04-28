@@ -1,3 +1,4 @@
+import { Analysis } from './types';
 export const AnalysisDetail = ({ analysis }: { analysis: Analysis }) => {
   return (
     <div className="space-y-4">
